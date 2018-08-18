@@ -11,7 +11,7 @@ function getLocation(e) {
   const zip = document.querySelector('.zip').value;
 
   // MAKE REQUEST
-  fetch(`http://api.zippopotam.us/IN/${zip}`)
+  fetch(`https://api.zippopotam.us/IN/${zip}`)
   .then(response => {
     if(response.status != 200) {
       showIcon('remove');
